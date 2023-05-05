@@ -7,9 +7,6 @@
       "esnext"
     ],
     "allowJs": true,
-    "types": [
-      "vite/client"
-    ],
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,

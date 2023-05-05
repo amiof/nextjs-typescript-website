@@ -7,6 +7,7 @@ type Props = {}
 function Landing({ }: Props) {
   return (
     <div className="bg-[url('../public/pics/landing-bg.jpg')] h-[1200px]   bg-no-repeat bg-cover bg-center relative">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <NavbarLanding></NavbarLanding>
       <div className='absolute top-1/3 left-32 w-full h-60 flex flex-col  '>
         <div>
