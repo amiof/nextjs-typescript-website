@@ -2,11 +2,12 @@ import React from 'react'
 import data from "@/components/data/cardInBar"
 import Card from '../card/Card'
 import Element from '../elements/elements'
+import Footer from '../Footer'
 type Props = {}
 
 function main({ }: Props) {
   return (
-    <div className='relative  justify-center items-center flex-col'>
+    <div className='relative  justify-center items-center flex-col h-auto '>
       <div className='h-screen bg-[url("../public/pics/2.png")] bg-cover relative' >
         <div className='w-full bg-gray-900 backdrop-blur-lg bg-opacity-10 h-80 absolute top-[-100px] border-t border-b border-gray-800 flex justify-center items-center'>
           <div className='w-5/6 h-full flex '>
@@ -21,9 +22,14 @@ function main({ }: Props) {
           </div>
         </div>
       </div>
-      <div className=' absolute top-60 flex justify-center items-center w-full p-10 '>
-        <Element></Element>
+      <div className=' absolute top-60 flex justify-center items-center w-full h-fit p-10  overflow-auto'>
+        <div className='w-full   '>
+          <Element></Element>
+          <Element></Element>
+          <Element></Element>
+        </div>
       </div>
+
     </div>
   )
 }
