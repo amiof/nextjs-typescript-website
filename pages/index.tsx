@@ -2,6 +2,7 @@ import Landing from '@/components/Landing'
 import NavbarLanding from '@/components/Navbar'
 import Head from 'next/head'
 import Mains from "components/main/main"
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <NavbarLanding></NavbarLanding>
         <Landing></Landing>
       <Mains></Mains>
+      <Footer></Footer>
     </>
   )
 }
