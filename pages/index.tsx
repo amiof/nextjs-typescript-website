@@ -18,7 +18,7 @@ export default function Home() {
       <NavbarLanding></NavbarLanding>
       <Landing></Landing >
       <Mains></Mains>
-      <div className='w-full bg-[url("../public/pics/3.png")] bg-cover p-5 '>
+      <div className='w-full bg-[url("../public/pics/3.png")] bg-cover p-5 bg-blur-2xl'>
         <div className='flex-col '>
           <Element ></Element>
           <Element></Element>

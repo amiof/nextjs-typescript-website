@@ -9,7 +9,7 @@ function main({ }: Props) {
   return (
 
       <div className='relative  justify-center items-center flex-col h-auto '>
-        <div className='h-screen bg-[url("../public/pics/2.png")] bg-cover relative' >
+        <div className='h-screen bg-[url("../public/pics/2.png")] bg-cover relative bg-blure-2xl' >
           <div className='w-full bg-gray-900 backdrop-blur-lg bg-opacity-10 h-80 absolute top-[-100px] border-t border-b border-gray-800 flex justify-center items-center'>
             <div className='w-5/6 h-full flex '>
 
