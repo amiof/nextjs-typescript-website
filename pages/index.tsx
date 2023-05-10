@@ -3,6 +3,7 @@ import NavbarLanding from '@/components/Navbar'
 import Head from 'next/head'
 import Mains from "components/main/main"
 import Footer from '@/components/Footer'
+import Element from '@/components/elements/elements'
 
 export default function Home() {
   return (
@@ -15,8 +16,15 @@ export default function Home() {
       </Head>
 
       <NavbarLanding></NavbarLanding>
-        <Landing></Landing>
+      <Landing></Landing >
       <Mains></Mains>
+      <div className='w-full bg-[url("../public/pics/3.png")] bg-cover p-5 '>
+        <div className='flex-col '>
+          <Element ></Element>
+          <Element></Element>
+          <Element></Element>
+        </div>
+      </div>
       <Footer></Footer>
     </>
   )
