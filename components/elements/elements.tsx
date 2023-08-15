@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
-import { Collapse, Grid, Text } from "@nextui-org/react";
-import { CodeBlock, dracula, atomOneDark } from 'react-code-blocks';
-import { test } from "./insideElements/MusicPlayerCode"
-type Props = {}
+import React, {  useState } from 'react'
+import { CodeBlock, monokai } from 'react-code-blocks';
+type Props = {
+  code: string
+  title: string
+}
 
-function Element({ }: Props) {
+function Element({ code, title }: Props) {
   const [openCollaps, setOpenCollaps] = useState<boolean>(true)
 
   const clickHandler = () => {
@@ -15,7 +16,7 @@ function Element({ }: Props) {
   return (
     <div className=' w-2/3 bg-gray-900 bg-opacity-20 text-white mx-auto mt-5  rounded-xl backdrop-blur-lg border border-gray-700 divide-y divide-dash divide-gray-800   '>
       <div className='flex justify-between p-5 ' onClick={clickHandler}>
-        <p className='ml-20' >shipped</p>
+        <p className='ml-20' >{title}</p>
         {openCollaps ?
           <span className="material-symbols-outlined">
             expand_less
@@ -27,17 +28,17 @@ function Element({ }: Props) {
         }
       </div>
       <div className={!openCollaps ? "hidden" : "w-full h-[400px] flex "} >
-        <div className='w-3/5 border border-yellow-300 '>
+        <div className='w-3/5 '>
           <p>hi</p>
 
         </div>
-        <div className='w-2/5 h-full overflow-auto'>
+        <div className='w-2/5 h-full overflow-auto scro' >
           <CodeBlock
-            text={test}
+            text={code}
             language="jsx"
             showLineNumbers={true}
             wrapLines={true}
-            theme={{ ...atomOneDark, backgroundColor: 'none' }}
+            theme={{ ...monokai, backgroundColor: 'none' }}
           />
         </div>
 
