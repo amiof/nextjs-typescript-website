@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Collapse, Grid, Text } from "@nextui-org/react";
-
+import { CodeBlock, dracula, atomOneDark } from 'react-code-blocks';
+import { test } from "./insideElements/MusicPlayerCode"
 type Props = {}
 
 function Element({ }: Props) {
@@ -17,7 +18,22 @@ function Element({ }: Props) {
           expand_less
         </span>
       </div>
-      <div className={!openCollaps ? "hidden" : "w-2/3 h-[400px]"} ></div>
+      <div className={!openCollaps ? "hidden" : "w-full h-[400px] flex "} >
+        <div className='w-3/5 border border-yellow-300 '>
+          <p>hi</p>
+
+        </div>
+        <div className='w-2/5 h-full overflow-auto'>
+          <CodeBlock
+            text={test}
+            language="jsx"
+            showLineNumbers={true}
+            wrapLines={true}
+            theme={{ ...atomOneDark, backgroundColor: 'none' }}
+          />
+        </div>
+
+      </div>
     </div>
 
   )
