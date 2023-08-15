@@ -6,7 +6,7 @@ type Props = {}
 function Footer({}: Props) {
   return (
     <div className='bg-[url("../public/pics/3.png")] bg-cover h-screen'>
-        <div className='bg-[url("../public/pics/footer.png")] bg-cover  w-full flex items-center flex-col h-[900px]' >
+        <div className='bg-[url("../public/pics/footer2.png")] bg-cover  w-full flex items-center flex-col h-[900px]' >
         <div>
           <h1 className='text-white text-[3rem] text-center mt-80'>community</h1>
           <p className='text-gray-500 text-xl'> Get involved in our community. Everyone is welcome!</p>
