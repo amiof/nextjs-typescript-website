@@ -16,6 +16,7 @@
     "@types/react-dom": "18.2.3",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
+    "framer-motion": "^10.15.2",
     "next": "13.3.4",
     "perfect-scrollbar": "^1.5.5",
     "react": "18.2.0",

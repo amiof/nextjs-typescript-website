@@ -1,3 +1,4 @@
+import { Button } from '@nextui-org/react'
 import Link from 'next/link'
 import React from 'react'
 type Props = {}
@@ -18,9 +19,8 @@ function NavbarLanding({ }: Props) {
           <Link href="#" className='m-5'>About us</Link>
         </div>
         <div className='flex'>
-          <p className='m-5'>signup</p>
-          <div className='m-5'>login</div>
-
+          <Button color="gradient" size="sm" className='m-5'>signup</Button>
+          <Button  color="gradient" size="sm" className='my-5'>login</Button>
         </div>
 
       </div>
