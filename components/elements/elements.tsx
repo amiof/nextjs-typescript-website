@@ -38,7 +38,7 @@ function Element({ code, title }: Props) {
             language="jsx"
             showLineNumbers={true}
             wrapLines={true}
-            theme={{ ...monokai, backgroundColor: 'none' }}
+            theme={{ ...monokai, backgroundColor: 'none'}}
           />
         </div>
 
